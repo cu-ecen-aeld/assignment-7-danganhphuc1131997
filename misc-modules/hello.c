@@ -5,9 +5,11 @@
 #include <linux/module.h>
 MODULE_LICENSE("Dual BSD/GPL");
 
+char *github_name = "danganhphuc1131997";
+
 static int hello_init(void)
 {
-	printk(KERN_ALERT "Hello, world\n");
+	printk(KERN_ALERT "Hello %s, world\n", github_name);
 	return 0;
 }
 
